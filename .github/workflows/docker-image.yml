@@ -16,8 +16,11 @@ jobs:
         username: ${{ secrets.DOCKERHUBUSER }}
         password: ${{ secrets.DOCKERHUBPAT }}
         
-    - name: Build and push the Docker image
-      working-directory: src/
-      run: |
-        docker build . --file Dockerfile --tag doeringp/graphapi-portfolio:$(date +%s)
-        docker push doeringp/graphapi-portfolio:$(date +%s)
+    - name: Build image and push to Docker Hub
+      uses: docker/build-push-action@v2
+      with:
+        context: ./src
+        tags:
+          doeringp/graphapi-portfolio:latest
+          doeringp/graphapi-portfolio:$(date +%s)
+        push: true
