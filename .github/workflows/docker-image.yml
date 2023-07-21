@@ -20,7 +20,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: ./src
-        tags:
+        tags: |
           doeringp/graphapi-portfolio:latest
           doeringp/graphapi-portfolio:$(date +%s)
         push: true
