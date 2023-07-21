@@ -29,17 +29,34 @@
   <div id="splash">
     Loading&hellip;
   </div>
+  <script>
+    // Remove the persisted query from the session before.
+    localStorage.removeItem("graphiql:query");
+    localStorage.removeItem("graphiql:tabState");
+  </script>
   <script src="//cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
   <script src="//unpkg.com/graphiql/graphiql.min.js"></script>
   <script>
-    const DEFAULT_QUERY = `# Welcome to my homepage
-#
+    const DEFAULT_QUERY = `# Hello
+# My name is Peter. I'm a software developer from Germany.
+# I made this GraphQL API to my homepage because 
+# everyone loves GraphQL.
+# Here's a sample query:
 
 {
   name
+  location
+  job
+  homepage
+  github
+  programmingLanguages
+  stack
+  programmingParadigms
+  methodologies
 }
+
 `;
 
       // Parse the search string to get url parameters.
