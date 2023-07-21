@@ -15,7 +15,7 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v2.2.0
       with:
-        username: todo
-        password: todo
+        username: ${{ secrets.DOCKERHUBUSER }}
+        password: ${{ secrets.DOCKERHUBPAT }}
     - name: Push to Docker Hub
       run: docker push doeringp/graphapi-portfolio:$(date +%s)
