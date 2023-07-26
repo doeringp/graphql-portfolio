@@ -8,45 +8,27 @@ public class Query
     public string Homepage { get; set; } = "https://www.peter-doering.com";
     public string Github { get; set; } = "https://github.com/doeringp";
 
+    public string EmployedAt { get; set; } = "Liebherr";
     public string Job { get; set; } = "Full Snack 🍕🍿🍰 Software Developer";
 
     /// <summary>
-    /// The programming languages I'm experienced with.
+    /// The topics I am an expert in.
     /// </summary>
-    public string[] ProgrammingLanguages { get; set; } = {
-        "C#",
-        "JavaScript",
-        "TypeScript",
-        "Python",
-    };
-
-    /// <summary>
-    /// Programming paradigms I use to solve real life problems.
-    /// </summary>
-    public string[] ProgrammingParadigms { get; set; } = {
-        "Object-oriented",
-        "Functional",
-        "Domain-driven",
-        "Event-driven",
-    };
-
-    public string[] Methodologies { get; set; } = {
-        "Agile",
-        "SCRUM",
-        "Incremental",
-        "Kanban",
+    public string[] ExpertFor { get; set; } = {
+        "Designing Web APIs",
+        "GraphQL",
+        "OpenID Connect",
         "DevOps"
     };
 
     /// <summary>
-    /// The technologies and frameworks I work with every day.
+    /// The technologies and frameworks I personally use every day to 
+    /// built (green emission-free 🌳 and user-friendly) software.
     /// </summary>
     public string[] Stack {get; set; } = {
         ".NET",
-        "Microsoft",
         "ASP.NET Core",
         "Entity Framework Core",
-        "LINQ",
         "GraphQL",
         "REST",
         "OpenAPI",
@@ -60,5 +42,15 @@ public class Query
         "Azure DevOps",
         "GitHub",
         "Angular",
+    };
+
+    /// <summary>
+    /// The programming languages I know well
+    /// </summary>
+    public string[] ProgrammingLanguages { get; set; } = {
+        "C#",
+        "JavaScript",
+        "TypeScript",
+        "Python",
     };
 }
