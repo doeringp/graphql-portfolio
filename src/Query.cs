@@ -11,14 +11,16 @@ public class Query
     public string EmployedAt { get; set; } = "Liebherr";
     public string Job { get; set; } = "Full Snack 🍕🍿🍰 Software Developer";
 
-    /// <summary>
-    /// The topics I am an expert in.
-    /// </summary>
     public string[] ExpertFor { get; set; } = {
         "Designing Web APIs",
         "GraphQL",
         "OpenID Connect",
         "DevOps"
+    };
+
+    public string[] CurrentlyLearning { get; set; } = {
+        "Functional Programming in C#",
+        "GraphQL"
     };
 
     /// <summary>
@@ -53,4 +55,24 @@ public class Query
         "TypeScript",
         "Python",
     };
+
+    public Product[] ExpertForProducts { get; set; } = {
+        new(
+            "IdentityServer", 
+            "OpenID Connect and OAuth 2.x framework for ASP.NET Core", 
+            "https://duendesoftware.com/products/identityserver"
+        ),
+        new(
+            "Hot Chocolate", 
+            "Open-source GraphQL server for the Microsoft .NET platform", 
+            "https://chillicream.com/docs/hotchocolate/v13"
+        ),
+        new(
+            "Azure DevOps", 
+            "Azure DevOps is an end-to-end software development platform", 
+            "https://dev.azure.com/"
+        ),
+    };
 }
+
+public record Product(string Name, string Description, string Homepage);
