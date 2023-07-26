@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start": "dotnet run --project src/Server.csproj",
+    "watch": "dotnet watch --no-hot-reload run --project src/Server.csproj"
+  }
+}
