@@ -8,7 +8,7 @@ public class Query
     public string Homepage { get; set; } = "https://www.peter-doering.com";
     public string Github { get; set; } = "https://github.com/doeringp";
 
-    public string Job { get; set; } = "Full Stack Software Developer";
+    public string Job { get; set; } = "Full Snack 🍕🍿🍰 Software Developer";
 
     /// <summary>
     /// The programming languages I'm experienced with.
