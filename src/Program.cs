@@ -13,10 +13,10 @@ app.UseDefaultFiles();
 app.UseStaticFiles();
 
 app.MapGraphQL(path: "/graphql")
-    .WithOptions(new GraphQLServerOptions
+    .WithOptions(o =>
     {
         // Disable the Banana Cake Pop GraphQL IDE
-        Tool = { Enable = false }
+        o.Tool.Enable = false;
     });
 
 app.Run();

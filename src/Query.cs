@@ -65,7 +65,7 @@ public class Query
         new(
             "Hot Chocolate", 
             "Open-source GraphQL server for the Microsoft .NET platform", 
-            "https://chillicream.com/docs/hotchocolate/v13"
+            "https://chillicream.com/docs/hotchocolate/v16"
         ),
         new(
             "Azure DevOps", 
